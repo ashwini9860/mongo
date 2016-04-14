@@ -1,0 +1,43 @@
+# for documentation of all options, see:
+#   http://docs.mongodb.org/manual/reference/configuration-options/
+#
+# where to write logging data.
+systemLog:
+   destination: file
+   logAppend: true
+   path: <%= @syspath %>
+
+# Where and how to store data.
+storage:
+   dbPath: <%= @dbpath %>
+   journal:
+     enabled: true
+#  engine:
+#  mmapv1:
+#  wiredTiger:
+
+# how the process runs
+processManagement:
+   fork: <%= @fork %>  # fork and run in background
+   pidFilePath: <%= @pidpath %>  # location of pidfile
+
+# network interfaces
+net:
+   port: <%= @port %>
+ # bindIp: 127.0.0.1  # Listen to local interface only, comment to listen on all interfaces.
+
+
+#security:
+
+#operationProfiling:
+
+replication:
+   replSetName: <%= @replname %>
+                       
+#sharding:
+
+## Enterprise-Only Options
+
+#auditLog:
+
+#snmp

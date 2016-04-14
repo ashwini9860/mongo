@@ -1,0 +1,16 @@
+#default['mongo']['baseurl'] = "https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.2/x86_64/"
+#default['mongo']['gpgkey'] = "https://www.mongodb.org/static/pgp/server-3.2.asc"
+#default['mongo']['repo'] = "mongodb-org.3.2"
+#default['mongo']['local_name'] = "mongo4"
+#default['mongo']['node1_ip'] = "192.168.61.18"
+#default['mongo']['node2_ip'] = "192.168.61.19"
+#default['mongo']['node3_ip'] = "192.168.61.20"
+#default['mongo']['node1_name'] = "mongo1"
+#default['mongo']['node1_name'] = "mongo2"
+#default['mongo']['node3_name'] = "mongo3"
+default['mongo']['dbpath'] = '/data/mongo'
+default['mongo']['fork'] = 'true'
+default['mongo']['syspath'] = '/data/mongo.log'
+default['mongo']['pidpath'] = '/var/run/mongodb/mongod.pid'
+default['mongo']['port'] = 27017
+default['mongo']['replname'] = 'rs0'
